@@ -12,7 +12,7 @@ class Airport(models.Model):
 
 class Runway(models.Model):
     LEFT = 'L'
-    CENTER ='C'
+    CENTER = 'C'
     RIGHT = 'R'
     NONE = 'N'
     RUNWAY_DESIGNATION_CHOICES = [
