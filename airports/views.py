@@ -11,3 +11,6 @@ def airport_info(request, airport_code):
     airport = Airport.objects.get(airport_code=airport_code)
     context = {'airports': airports}
     return render(request, 'airports/airport.html', context)
+
+
+

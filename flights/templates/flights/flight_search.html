@@ -1,0 +1,30 @@
+<!-- Specify which template to extend -->
+{% extends 'base.html' %}
+
+<!-- Add content to the content block in the main template -->
+{% block content %}
+<h1> </h1>
+<table class="table">
+    <tr>
+        <td><strong>Airline Name</strong></td>
+        <td>{{ airline.airline_name}}</td>
+    </tr>
+    <tr>
+        <td><strong>Airline Code</strong></td>
+        <td>{{ airline.airline_code}}</td>
+    </tr>
+    <tr>
+        <td><strong>Flight Number</strong></td>
+        <td>{{ flight.flight_number}}</td>
+    </tr>
+    <tr>
+        <td><strong>Departure</strong></td>
+        <td>{{ airline.departure}}</td>
+    </tr>
+    <tr>
+        <td><strong>Arrival</strong></td>
+        <td>{{ airline.arrival}}</td>
+    </tr>
+</table>
+
+{% endblock %}
